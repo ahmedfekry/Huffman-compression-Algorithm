@@ -7,7 +7,7 @@ package huffmanwindow;
  */
 /**
  *
- * @author lenovo
+ * @author Ahmed Fekry
  */
 public class Leaf extends Tree{
 	

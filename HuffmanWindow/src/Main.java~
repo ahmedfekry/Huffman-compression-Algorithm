@@ -7,8 +7,9 @@ package huffmanwindow;
  */
 /**
  *
- * @author lenovo
- */import java.util.Arrays;
+ * @author Ahmed Fekry
+ */
+import java.util.Arrays;
 
 
 public class Main {

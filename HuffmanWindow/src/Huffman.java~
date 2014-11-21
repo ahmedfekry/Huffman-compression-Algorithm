@@ -7,8 +7,9 @@ package huffmanwindow;
  */
 /**
  *
- * @author lenovo
- */import java.util.*;
+ * @author Ahmed Fekry
+ */
+import java.util.*;
 import java.util.Map.Entry;
 
 import com.sun.org.apache.regexp.internal.REUtil;
