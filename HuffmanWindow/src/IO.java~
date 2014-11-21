@@ -1,14 +1,4 @@
-package huffmanwindow;
-
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author lenovo
- *//*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -49,8 +39,6 @@ public class IO {
             System.out.println(e.getMessage());
         }
     }
-    //00111000
-    //00000000/0000000/000000/00000
     public void writeBinary(String filename , String s , int sz){
         FileOutputStream out = null;
         byte data[] = new byte[(sz + 7) / 8];
@@ -70,15 +58,14 @@ public class IO {
         }
         
     }
-    //00111000
-    //001
+  
     public String readBinary(String filename){
         File inputFile = new File(filename);
         String res = "";
         FileInputStream r = null;
         try{
             r = new FileInputStream(inputFile);
-            int sz = r.read()+1;
+            int sz = r.read();
             byte[] data = new byte[(sz + 7)/8];
             r.read(data, 0, data.length);
             r.close();

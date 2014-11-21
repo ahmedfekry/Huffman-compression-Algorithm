@@ -7,26 +7,23 @@ package huffmanwindow;
  */
 /**
  *
- * @author Ahmed Fekry
+ * @author lenovo
  */
-public class Leaf extends Tree{
-	
+public abstract class Tree {
+
+	private int Freq;
 	public char leaf;
-	public Leaf() {
-		
+	
+	public Tree() {
+		// TODO Auto-generated constructor stub
 	}
 	
-	public Leaf(char l , int r) {
-		setLeaf(l);
-		setFreq(r);
+	public void setFreq(int r) {
+		Freq = r;
 	}
 	
-	public void setLeaf(char lea) {
-		leaf = lea;
-	}
-	
-	public char getLeaf() {
-		return leaf;
+	public int getFreq() {
+		return this.Freq;
 	}
 
 }
